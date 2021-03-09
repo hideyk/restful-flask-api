@@ -4,4 +4,4 @@ Flask-RESTful==0.3.8
 Jinja2==2.11.2
 psycopg2-binary==2.8.6
 pytz==2020.4
-PyYAML==54.1
+PyYAML==5.4.1
