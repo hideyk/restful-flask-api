@@ -53,8 +53,8 @@ def check_number_exists(phonenumber):
 def create_new_user(username, firstname, lastname, phonenumber):
     conn = create_connection()
     with conn.cursor() as cur:
-        cur.execute("""INSERT INTO users (username, firstname, lastname, phonenumber)
-                        VALUES (%s, %s, %s, %s)""", (username, firstname, lastname, phonenumber))
+        cur.execute("""INSERT INTO users (username, firstname, lastname, balance, phonenumber)
+                        VALUES (%s, %s, %s, %s)""", (username, firstname, lastname, 0.0, phonenumber))
     return {
         "username": username,
         "firstname": firstname,
