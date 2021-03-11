@@ -19,6 +19,7 @@ def create_connection():
             user=db_config['USER'],
             password=db_config['PASS'],
             host=db_config['HOST'],
+            port=db_config['PORT']
         )
         connection.set_session(autocommit=True)
     except OperationalError as e:
