@@ -6,3 +6,5 @@ CREATE TABLE users (
 	balance MONEY NOT NULL,
 	phonenumber int NOT NULL
 );
+
+psql -U hidey -W upay

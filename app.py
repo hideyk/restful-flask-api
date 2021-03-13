@@ -1,7 +1,5 @@
 from flask import Flask, request, render_template
-from flask_restful import Resource, Api, reqparse, fields, marshal_with
-import configparser
-import json
+from flask_restful import Resource, Api
 import yaml
 import db.db as db
 import os
@@ -142,4 +140,4 @@ api.add_resource(Transfer, '/transfer/<sender>')
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5555)
