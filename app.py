@@ -16,6 +16,7 @@ with open(os.path.join(__location__, flask_config)) as f:
 API_KEY = data['API_KEY']
 
 
+
 # Helper functions
 def money2float(money):
     return float(money[1:])
@@ -141,3 +142,4 @@ api.add_resource(Transfer, '/transfer/<sender>')
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5555)
+    
